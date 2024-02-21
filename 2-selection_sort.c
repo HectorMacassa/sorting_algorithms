@@ -12,7 +12,6 @@ void swap(int *a, int *b)
 	*a = *b;
 	*b = temp;
 }
-
 /**
  * selection_sort - Sorts an array of integers in ascending order using
  * selection sort
