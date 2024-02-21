@@ -24,20 +24,20 @@ void swap(int *a, int *b)
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, len = size;
-	bool bubble = false;
+	bool swapped = false;
 
 	if (array == NULL || size < 2)
 		return;
-	while (bubble == false)
+	while (swapped == false)
 	{
-		bubble = true;
+		swapped = true;
 		for (i = 0; i < len - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{
 				swap(array + i, array + i + 1);
 				print_array(array, size);
-				bubble = false;
+				swapped = false;
 			}
 		}
 		len--;
